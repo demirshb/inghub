@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:maindb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 1234
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  application:
+    name: loan-service
+jwt:
+  secret: 81CE856A12266386CE88518C4343881CE856A12266386CE88518C4343881CE856A12266386CE88518C43438
+  expiration: 3600000
+
+server:
+  port: 8000
